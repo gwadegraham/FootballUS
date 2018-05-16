@@ -1,0 +1,40 @@
+{% extends "base_generic.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<!-- {% block content %} -->
+<body>
+	<div id="wrapper">
+        <div class="overlay"></div>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+          <span class="hamb-middle"></span>
+        <span class="hamb-bottom"></span>
+            </button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h1>FootballUS</h1>
+                        <h3>This is the home page for league tables!</h3>
+                        <br>
+						<div class="list-group list-group-flush">
+						  <a href="/tables/bundesliga_1" class="list-group-item list-group-item-action">1.Bundesliga</a>
+						  <a href="/tables/premier_league" class="list-group-item list-group-item-action">English Premier League</a>
+						  <a href="/tables/ligue_one" class="list-group-item list-group-item-action">Ligue 1</a>
+						  <a href="/tables/serie_a" class="list-group-item list-group-item-action">Serie A</a>
+						  <a href="/tables/laliga" class="list-group-item list-group-item-action">LaLiga</a>
+						</div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+</body>
+<!-- {% endblock %} -->
+</html>

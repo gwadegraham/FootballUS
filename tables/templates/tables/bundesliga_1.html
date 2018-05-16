@@ -1,0 +1,46 @@
+{% extends "base_generic.html" %}
+{% block content %}
+  <h1>FootballUS</h1>
+  <h3>It is Matchday <strong>{{ matchday }}</strong> in the <strong>{{ leagueCaption }}</strong>.</h3> 
+  <br>
+  <br>
+
+  <body>
+
+  <table
+  cellpadding="5" 
+  cellspacing="5" 
+  border="1">
+
+  <tr>
+
+  <th>Position</th>
+
+  <th>Team</th>
+
+  <th>MP</th>
+
+  <th>Wins</th>
+
+  <th>Points</th>
+
+  </tr>
+
+  {% for entry in table %}
+    <tr>
+
+    <td>{{ entry.1 }}</td>
+
+    <td>{{ entry.0 }}</td>
+
+    <td>{{ entry.2 }}</td>
+
+    <td>{{ entry.3 }}</td>
+
+    <td>{{ entry.4 }}</td>
+
+    </tr>
+  {% endfor %}
+
+  </table></body>	
+{% endblock %}
