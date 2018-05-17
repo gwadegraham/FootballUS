@@ -315,9 +315,9 @@ button {
 /*-------------------------------*/
 
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-  background-color: #EB4E7D;
+  background-color: #F290AE;
 }
 
 .list-group-flush .list-group-item:hover {
-  background-color: #EB4E7D;
+  background-color: #F290AE;
 }
