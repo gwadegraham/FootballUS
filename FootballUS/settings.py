@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&
 # following django tutorial, advised to do this:
 DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
-ALLOWED_HOSTS = ['footballus.herokuapp.com']
+ALLOWED_HOSTS = ['footballus.herokuapp.com','localhost']
 
 
 # Application definition
