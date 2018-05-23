@@ -457,8 +457,129 @@ def metz(request):
 	player_url = team_url + '/players'
 	return get_team_data(team_url, fixture_url, player_url, request)
 
+# ------------------------------- #
+#          Serie A Views          #
+# ------------------------------- #
 
+def juventus_turin(request):
+	team_url = 'http://api.football-data.org/v1/teams/109'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
 
+def ssc_napoli(request):
+	team_url = 'http://api.football-data.org/v1/teams/113'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def as_roma(request):
+	team_url = 'http://api.football-data.org/v1/teams/100'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def ss_lazio(request):
+	team_url = 'http://api.football-data.org/v1/teams/110'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def inter_milan(request):
+	team_url = 'http://api.football-data.org/v1/teams/108'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def ac_milan(request):
+	team_url = 'http://api.football-data.org/v1/teams/98'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def atalanta_bc(request):
+	team_url = 'http://api.football-data.org/v1/teams/102'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def acf_fiorentina(request):
+	team_url = 'http://api.football-data.org/v1/teams/99'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def torino_fc(request):
+	team_url = 'http://api.football-data.org/v1/teams/586'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def uc_sampdoria(request):
+	team_url = 'http://api.football-data.org/v1/teams/584'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def us_sassuolo_calcio(request):
+	team_url = 'http://api.football-data.org/v1/teams/471'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def genoa_cfc(request):
+	team_url = 'http://api.football-data.org/v1/teams/107'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def udinese_calcio(request):
+	team_url = 'http://api.football-data.org/v1/teams/115'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def ac_chievo_verona(request):
+	team_url = 'http://api.football-data.org/v1/teams/106'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def bologna_fc(request):
+	team_url = 'http://api.football-data.org/v1/teams/103'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def cagliari_calcio(request):
+	team_url = 'http://api.football-data.org/v1/teams/104'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def spal_ferrara(request):
+	team_url = 'http://api.football-data.org/v1/teams/1107'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def fc_crotone(request):
+	team_url = 'http://api.football-data.org/v1/teams/472'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def hellas_verona_fc(request):
+	team_url = 'http://api.football-data.org/v1/teams/450'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def benevento_calcio(request):
+	team_url = 'http://api.football-data.org/v1/teams/1106'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
 
 
 

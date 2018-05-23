@@ -65,6 +65,27 @@ urlpatterns = [
     url(r'^Toulouse FC$', views.toulouse, name="toulouse"),
     url(r'^ES Troyes AC$', views.es_troyes_ac, name="es_troyes_ac"),
     url(r'^FC Metz$', views.metz, name="metz"),
+    # Serie A url patterns
+    url(r'^Juventus Turin$', views.juventus_turin, name="juventus_turin"),
+    url(r'^SSC Napoli$', views.ssc_napoli, name="ssc_napoli"),
+    url(r'^AS Roma$', views.as_roma, name="as_roma"),
+    url(r'^SS Lazio$', views.ss_lazio, name="ss_lazio"),
+    url(r'^FC Internazionale Milano$', views.inter_milan, name="inter_milan"),
+    url(r'^AC Milan$', views.ac_milan, name="ac_milan"),
+    url(r'^Atalanta BC$', views.atalanta_bc, name="atalanta_bc"),
+    url(r'^ACF Fiorentina$', views.acf_fiorentina, name="acf_fiorentina"),
+    url(r'^Torino FC$', views.torino_fc, name="torino_fc"),
+    url(r'^UC Sampdoria$', views.uc_sampdoria, name="uc_sampdoria"),
+    url(r'^US Sassuolo Calcio$', views.us_sassuolo_calcio, name="us_sassuolo_calcio"),
+    url(r'^Genoa CFC$', views.genoa_cfc, name="genoa_cfc"),
+    url(r'^Udinese Calcio$', views.udinese_calcio, name="udinese_calcio"),
+    url(r'^AC Chievo Verona$', views.ac_chievo_verona, name="ac_chievo_verona"),
+    url(r'^Bologna FC$', views.bologna_fc, name="bologna_fc"),
+    url(r'^Cagliari Calcio$', views.cagliari_calcio, name="cagliari_calcio"),
+    url(r'^SPAL Ferrara$', views.spal_ferrara, name="spal_ferrara"),
+    url(r'^FC Crotone$', views.fc_crotone, name="fc_crotone"),
+    url(r'^Hellas Verona FC$', views.hellas_verona_fc, name="hellas_verona_fc"),
+    url(r'^Benevento Calcio$', views.benevento_calcio, name="benevento_calcio"),
 ]
 
 
