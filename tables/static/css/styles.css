@@ -321,3 +321,27 @@ button {
 .list-group-flush .list-group-item:hover {
   background-color: #F290AE;
 }
+
+.fixture_name {
+  border-right: 5px solid #808080;
+}
+
+.fixture_sep {
+  border-color: #F290AE
+}
+
+/*-------------------------------*/
+/*        Team Profile Crest     */
+/*-------------------------------*/
+
+.team_crest {
+  width: 20%;
+}
+
+/*-------------------------------*/
+/*        Bootstrap Cards        */
+/*-------------------------------*/
+
+.card {
+  margin-top: 20px;
+}
