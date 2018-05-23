@@ -1,0 +1,118 @@
+{% extends "base_generic.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<!-- {% block content %} -->
+<body>
+  <div id="wrapper">
+        <div class="overlay"></div>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+          <span class="hamb-middle"></span>
+        <span class="hamb-bottom"></span>
+            </button>
+            <div class="container"> 
+                <!-- crest and heading -->
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                      <img src='{{ teamCrest }}' class="team_crest">
+                    </div>  
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h1>{{ teamName }}</h1>
+                        <br>
+                        <br>
+                    </div>
+                    <div>
+                      <button class="fas fa-angle-double-left fa-4x" onclick="goBack()"></button>
+                      <script>
+                        function goBack() {
+                            window.history.back();
+                        }
+                      </script>
+                    </div>
+                </div>
+                <!-- further team info -->
+                <div class="row">
+                  <div class="col-lg-4 col-lg-offset-2">
+                    <h3>Fixtures:</h3>
+                    <div class="table-responsive">
+                      {% for entry in fixtureInfo %}
+                        <table
+                        class="table">
+
+                        <thead>
+                          <tr>
+
+                          <th scope="col">{{ entry.0 }}</th>
+
+                          </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                            <th scope="row" class="fixture_name">{{ entry.1 }}</th>
+
+                            <td>{{ entry.3 }}</td>
+
+                            </tr>
+
+                            <tr>
+
+                            <th scope="row" class="fixture_name">{{ entry.2 }}</th>
+
+                            <td>{{ entry.4 }}</td>
+
+                            </tr>
+
+                      </tbody>
+                      </table>
+                      <hr class="fixture_sep">
+                      {% endfor %}
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <h3>Players:</h3>
+                    <div class="container">
+                      <!-- player column 1 -->
+                      <div class="col-lg-3">
+                        {% for entry in playerInfo1 %}
+                        <div class="card" style="width: 25rem;">
+                          <div class="card-body">
+                            <h5 class="card-title">{{ entry.0 }}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">{{ entry.1 }}</h6>
+                            <p class="card-text">Number: {{ entry.2 }}</p>
+                            <p class="card-text">Nationality: {{ entry.3 }}</p>
+                          </div>
+                        </div>
+                        {% endfor %}
+                      </div>
+                      <!-- player column 2 -->
+                      <div class="col-lg-3">
+                        {% for entry in playerInfo2 %}
+                        <div class="card" style="width: 25rem;">
+                          <div class="card-body">
+                            <h5 class="card-title">{{ entry.0 }}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">{{ entry.1 }}</h6>
+                            <p class="card-text">Number: {{ entry.2 }}</p>
+                            <p class="card-text">Nationality: {{ entry.3 }}</p>
+                          </div>
+                        </div>
+                        {% endfor %}
+                      </div>
+                    </div>
+                  </div>
+                </div>  
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+</body>
+<!-- {% endblock %} -->
+</html>

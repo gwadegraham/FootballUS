@@ -54,7 +54,7 @@
 
                         <tbody>
                           {% for entry in table %}
-                            <tr>
+                            <tr class='clickable-row' data-href='/teamprofiles/{{ entry.0 }}'>
 
                             <th scope="row">{{ entry.1 }}</th>
 
@@ -101,5 +101,15 @@
     <!-- /#wrapper -->
 
 </body>
+
+<!-- jquery for making row clickable link -->
+<script>
+  jQuery(document).ready(function($) {
+      $(".clickable-row").click(function() {
+          window.location = $(this).data("href");
+      });
+  });
+</script>
+
 <!-- {% endblock %} -->
 </html>
