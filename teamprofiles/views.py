@@ -96,6 +96,10 @@ def get_team_data(team_url, fixture_url, player_url, request):
 		'playerInfo2' : playerInfo2
 	})
 
+# ------------------------------- #
+#         Bundesliga Views        #
+# ------------------------------- #
+
 def borussia_dortmund(request):
 	team_url = 'http://api.football-data.org/v1/teams/4'
 	fixture_url = team_url + '/fixtures'
@@ -200,6 +204,131 @@ def hamburger_sv(request):
 
 def fc_koln(request):
 	team_url = 'http://api.football-data.org/v1/teams/1'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+
+# ------------------------------- #
+#       Premier League Views      #
+# ------------------------------- #
+
+def manchester_city(request):
+	team_url = 'http://api.football-data.org/v1/teams/65'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def manchester_united(request):
+	team_url = 'http://api.football-data.org/v1/teams/66'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def tottenham_hotspur(request):
+	team_url = 'http://api.football-data.org/v1/teams/73'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def liverpool(request):
+	team_url = 'http://api.football-data.org/v1/teams/64'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def chelsea(request):
+	team_url = 'http://api.football-data.org/v1/teams/61'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def arsenal(request):
+	team_url = 'http://api.football-data.org/v1/teams/57'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def burnley(request):
+	team_url = 'http://api.football-data.org/v1/teams/328'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def everton(request):
+	team_url = 'http://api.football-data.org/v1/teams/62'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def leicester_city(request):
+	team_url = 'http://api.football-data.org/v1/teams/338'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def newcastle_united(request):
+	team_url = 'http://api.football-data.org/v1/teams/67'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def crystal_palace(request):
+	team_url = 'http://api.football-data.org/v1/teams/354'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def afc_bournemouth(request):
+	team_url = 'http://api.football-data.org/v1/teams/1044'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def west_ham_united(request):
+	team_url = 'http://api.football-data.org/v1/teams/563'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def watford(request):
+	team_url = 'http://api.football-data.org/v1/teams/346'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def brighton_hove_albion(request):
+	team_url = 'http://api.football-data.org/v1/teams/397'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def huddersfield_town(request):
+	team_url = 'http://api.football-data.org/v1/teams/394'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def southampton(request):
+	team_url = 'http://api.football-data.org/v1/teams/340'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def swansea_city(request):
+	team_url = 'http://api.football-data.org/v1/teams/72'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def stoke_city(request):
+	team_url = 'http://api.football-data.org/v1/teams/70'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def west_bromwich_albion(request):
+	team_url = 'http://api.football-data.org/v1/teams/74'
 	fixture_url = team_url + '/fixtures'
 	player_url = team_url + '/players'
 	return get_team_data(team_url, fixture_url, player_url, request)
