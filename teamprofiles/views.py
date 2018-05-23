@@ -21,8 +21,6 @@ def get_team_data(team_url, fixture_url, player_url, request):
 	# get number of players
 	num_players = int(playerdata['count'])
 	num_div = num_players/2
-	num_play_1 = num_div - 1
-	num_play_2 = num_players - 1
 	# match dates list
 	match_dates = []
 	for i in range(fix_counter, (fix_counter-num_fixtures), -1):
@@ -47,35 +45,35 @@ def get_team_data(team_url, fixture_url, player_url, request):
 	    away_goals.append(fixturedata['fixtures'][i]['result']['goalsAwayTeam'])
 	# player names list 1
 	play_names_1 = []
-	for i in range(0,num_play_1):
+	for i in range(0,num_div):
 	    play_names_1.append(playerdata['players'][i]['name'])
 	# player names list 2
 	play_names_2 = []
-	for i in range(num_div, num_play_2):
+	for i in range(num_div, num_players):
 	    play_names_2.append(playerdata['players'][i]['name'])
 	# player position list 1
 	play_pos_1 = []
-	for i in range(0,num_play_1):
+	for i in range(0,num_div):
 	    play_pos_1.append(playerdata['players'][i]['position'])
 	# player position list 2
 	play_pos_2 = []
-	for i in range(num_div, num_play_2):
+	for i in range(num_div, num_players):
 	    play_pos_2.append(playerdata['players'][i]['position'])
 	# player number list 1
 	play_num_1 = []
-	for i in range(0,num_play_1):
+	for i in range(0,num_div):
 	    play_num_1.append(playerdata['players'][i]['jerseyNumber'])
 	# player number list 2
 	play_num_2 = []
-	for i in range(num_div, num_play_2):
+	for i in range(num_div, num_players):
 	    play_num_2.append(playerdata['players'][i]['jerseyNumber'])
 	# player nationality list 1
 	play_nat_1 = []
-	for i in range(0,num_play_1):
+	for i in range(0,num_div):
 	    play_nat_1.append(playerdata['players'][i]['nationality'])
 	# player nationality list 2
 	play_nat_2 = []
-	for i in range(num_div, num_play_2):
+	for i in range(num_div, num_players):
 	    play_nat_2.append(playerdata['players'][i]['nationality'])
 
 	fixtureInfo = []
@@ -100,6 +98,108 @@ def get_team_data(team_url, fixture_url, player_url, request):
 
 def borussia_dortmund(request):
 	team_url = 'http://api.football-data.org/v1/teams/4'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def bayern_munich(request):
+	team_url = 'http://api.football-data.org/v1/teams/5'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def schalke(request):
+	team_url = 'http://api.football-data.org/v1/teams/6'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def hoffenheim(request):
+	team_url = 'http://api.football-data.org/v1/teams/2'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def bayer_leverkusen(request):
+	team_url = 'http://api.football-data.org/v1/teams/3'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def red_bull_leipzig(request):
+	team_url = 'http://api.football-data.org/v1/teams/721'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def vfb_stuttgart(request):
+	team_url = 'http://api.football-data.org/v1/teams/10'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def eintracht_frankfurt(request):
+	team_url = 'http://api.football-data.org/v1/teams/19'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def borussia_monchengladbach(request):
+	team_url = 'http://api.football-data.org/v1/teams/18'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def hertha_berlin(request):
+	team_url = 'http://api.football-data.org/v1/teams/9'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def werder_bremen(request):
+	team_url = 'http://api.football-data.org/v1/teams/12'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def fc_augsburg(request):
+	team_url = 'http://api.football-data.org/v1/teams/16'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def hannover_96(request):
+	team_url = 'http://api.football-data.org/v1/teams/8'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def fsv_mainz_05(request):
+	team_url = 'http://api.football-data.org/v1/teams/15'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def sc_freiburg(request):
+	team_url = 'http://api.football-data.org/v1/teams/17'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def vfl_wolfsburg(request):
+	team_url = 'http://api.football-data.org/v1/teams/11'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def hamburger_sv(request):
+	team_url = 'http://api.football-data.org/v1/teams/7'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def fc_koln(request):
+	team_url = 'http://api.football-data.org/v1/teams/1'
 	fixture_url = team_url + '/fixtures'
 	player_url = team_url + '/players'
 	return get_team_data(team_url, fixture_url, player_url, request)
