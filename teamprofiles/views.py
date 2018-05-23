@@ -332,3 +332,138 @@ def west_bromwich_albion(request):
 	fixture_url = team_url + '/fixtures'
 	player_url = team_url + '/players'
 	return get_team_data(team_url, fixture_url, player_url, request)
+
+# ------------------------------- #
+#          Ligue 1 Views          #
+# ------------------------------- #
+
+def paris_saint_germain(request):
+	team_url = 'http://api.football-data.org/v1/teams/524'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def as_monaco(request):
+	team_url = 'http://api.football-data.org/v1/teams/548'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def olympique_lyonnais(request):
+	team_url = 'http://api.football-data.org/v1/teams/523'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def olympique_de_marseille(request):
+	team_url = 'http://api.football-data.org/v1/teams/516'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def stade_rennais(request):
+	team_url = 'http://api.football-data.org/v1/teams/529'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def girondins_de_bordeaux(request):
+	team_url = 'http://api.football-data.org/v1/teams/526'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def as_saint_etienne(request):
+	team_url = 'http://api.football-data.org/v1/teams/527'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def ogc_nice(request):
+	team_url = 'http://api.football-data.org/v1/teams/522'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def nantes(request):
+	team_url = 'http://api.football-data.org/v1/teams/543'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def montpellier_herault(request):
+	team_url = 'http://api.football-data.org/v1/teams/518'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def dijon_fco(request):
+	team_url = 'http://api.football-data.org/v1/teams/528'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def ea_guingamp(request):
+	team_url = 'http://api.football-data.org/v1/teams/538'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def amiens(request):
+	team_url = 'http://api.football-data.org/v1/teams/530'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def angers(request):
+	team_url = 'http://api.football-data.org/v1/teams/532'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def rc_strasbourg_alsace(request):
+	team_url = 'http://api.football-data.org/v1/teams/576'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def sm_caen(request):
+	team_url = 'http://api.football-data.org/v1/teams/514'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def osc_lille(request):
+	team_url = 'http://api.football-data.org/v1/teams/521'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def toulouse(request):
+	team_url = 'http://api.football-data.org/v1/teams/511'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def es_troyes_ac(request):
+	team_url = 'http://api.football-data.org/v1/teams/531'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def metz(request):
+	team_url = 'http://api.football-data.org/v1/teams/545'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+
+
+
+
+
+
+
+
+
+
