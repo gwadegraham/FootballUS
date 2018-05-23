@@ -16,9 +16,11 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from tables import views
+# from teamprofiles import views
 
 urlpatterns = [
 	url(r'^$', views.index, name="index"),
 	url(r'^tables/', include('tables.urls')),
+    url(r'^teamprofiles/', include('teamprofiles.urls')),
     url(r'^admin/', admin.site.urls),
 ]
