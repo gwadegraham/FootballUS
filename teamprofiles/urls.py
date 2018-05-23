@@ -86,11 +86,25 @@ urlpatterns = [
     url(r'^FC Crotone$', views.fc_crotone, name="fc_crotone"),
     url(r'^Hellas Verona FC$', views.hellas_verona_fc, name="hellas_verona_fc"),
     url(r'^Benevento Calcio$', views.benevento_calcio, name="benevento_calcio"),
+    # LaLiga url patterns
+    url(r'^FC Barcelona', views.barcelona, name="barcelona"),
+    url(r'^Club Atl[\w|\W]tico de Madrid', views.atletico_madrid, name="atletico_madrid"),
+    url(r'^Real Madrid CF', views.real_madrid, name="real_madrid"),
+    url(r'^Valencia CF', views.valencia, name="valencia"),
+    url(r'^Villarreal CF', views.villarreal, name="villarreal"),
+    url(r'^Real Betis', views.real_betis, name="real_betis"),
+    url(r'^Sevilla FC', views.sevilla, name="sevilla"),
+    url(r'^Getafe CF', views.getafe, name="getafe"),
+    url(r'^SD Eibar', views.sd_eibar, name="sd_eibar"),
+    url(r'^Girona FC', views.girona, name="girona"),
+    url(r'^Real Sociedad de F[\w|\W]tbol', views.real_sociedad, name="real_sociedad"),
+    url(r'^RC Celta de Vigo', views.celta_de_vigo, name="celta_de_vigo"),
+    url(r'^RCD Espanyol', views.espanyol, name="espanyol"),
+    url(r'^Deportivo Alav[\w|\W]s', views.deportivo_alaves, name="deportivo_alaves"),
+    url(r'^Levante UD', views.levante_ud, name="levante_ud"),
+    url(r'^Athletic Club', views.athletic_club, name="athletic_club"),
+    url(r'^CD Leganes', views.leganes, name="leganes"),
+    url(r'^RC Deportivo La Coruna', views.deportivo_la_coruna, name="deportivo_la_coruna"),
+    url(r'^UD Las Palmas', views.las_palmas, name="las_palmas"),
+    url(r'^M[\w|\W]laga CF', views.malaga, name="malaga"),
 ]
-
-
-
-
-
-
-

@@ -581,10 +581,126 @@ def benevento_calcio(request):
 	player_url = team_url + '/players'
 	return get_team_data(team_url, fixture_url, player_url, request)
 
+# ------------------------------- #
+#          LaLiga Views           #
+# ------------------------------- #
 
+def barcelona(request):
+	team_url = 'http://api.football-data.org/v1/teams/81'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
 
+def atletico_madrid(request):
+	team_url = 'http://api.football-data.org/v1/teams/78'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
 
+def real_madrid(request):
+	team_url = 'http://api.football-data.org/v1/teams/86'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
 
+def valencia(request):
+	team_url = 'http://api.football-data.org/v1/teams/95'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
 
+def villarreal(request):
+	team_url = 'http://api.football-data.org/v1/teams/94'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
 
+def real_betis(request):
+	team_url = 'http://api.football-data.org/v1/teams/90'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
 
+def sevilla(request):
+	team_url = 'http://api.football-data.org/v1/teams/559'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def getafe(request):
+	team_url = 'http://api.football-data.org/v1/teams/82'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def sd_eibar(request):
+	team_url = 'http://api.football-data.org/v1/teams/278'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def girona(request):
+	team_url = 'http://api.football-data.org/v1/teams/298'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def real_sociedad(request):
+	team_url = 'http://api.football-data.org/v1/teams/92'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def celta_de_vigo(request):
+	team_url = 'http://api.football-data.org/v1/teams/558'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def espanyol(request):
+	team_url = 'http://api.football-data.org/v1/teams/80'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def deportivo_alaves(request):
+	team_url = 'http://api.football-data.org/v1/teams/263'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def levante_ud(request):
+	team_url = 'http://api.football-data.org/v1/teams/88'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def athletic_club(request):
+	team_url = 'http://api.football-data.org/v1/teams/77'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def leganes(request):
+	team_url = 'http://api.football-data.org/v1/teams/745'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def deportivo_la_coruna(request):
+	team_url = 'http://api.football-data.org/v1/teams/560'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def las_palmas(request):
+	team_url = 'http://api.football-data.org/v1/teams/275'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
+
+def malaga(request):
+	team_url = 'http://api.football-data.org/v1/teams/84'
+	fixture_url = team_url + '/fixtures'
+	player_url = team_url + '/players'
+	return get_team_data(team_url, fixture_url, player_url, request)
