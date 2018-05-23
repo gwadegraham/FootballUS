@@ -335,13 +335,24 @@ button {
 /*-------------------------------*/
 
 .team_crest {
-  width: 20%;
+  width: 40%;
+  padding: 2% 0;
 }
 
+#team_name {
+  font-size: 5vw;
+  margin-left: -200px;
+  padding: 2% 0;
+}
 /*-------------------------------*/
 /*        Bootstrap Cards        */
 /*-------------------------------*/
 
 .card {
   margin-top: 20px;
+}
+
+#main_container {
+    margin-top: -5%;
+    margin-left: -3%;
 }
