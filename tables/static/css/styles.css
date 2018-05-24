@@ -462,7 +462,7 @@ button {
   }
 
   .team_crest {
-    width: 100%;
+    width: 80px;
     padding: 2% 0;
     margin-left: 10%;
     margin-top: -70%;
@@ -490,7 +490,7 @@ button {
   }
 
   #team_name {
-    padding-left: 50%;
+    margin-left: -420%;
     padding-top: 100%;
   }
 
