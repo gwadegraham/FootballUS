@@ -412,7 +412,7 @@ button {
 } 
 
 /*Use a media query to add a break point at 500px: */
-@media screen and (max-width:500px) {
+@media screen and (max-device-width:500px) {
   #main_container {
     margin-top: -5%;
     margin-left: 15%;
@@ -455,7 +455,7 @@ button {
 }
 
 /*Use a media query to add a break point at 320px: */
-@media screen and (max-width:320px) {
+@media screen and (max-device-width:320px) {
   #main_container {
     margin-top: -5%;
     margin-left: 15%;
@@ -500,7 +500,7 @@ button {
 }
 
 /*Use a media query to add a break point at 250px: */
-@media screen and (max-width:250px) {
+@media screen and (max-device-width:250px) {
   #main_container {
     margin-top: -5%;
     margin-left: 15%;
