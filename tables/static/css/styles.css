@@ -543,3 +543,53 @@ button {
     margin-left: -5%;
   }
 }
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    #main_container {
+    margin-top: -5%;
+    margin-left: 15%;
+  }
+
+  .team_crest {
+    width: 80px;
+    padding: 2% 0;
+    margin-left: 10%;
+    margin-top: -70%;
+  }
+
+  .col-lg-5 {
+    margin-left: 50%;
+  }
+
+  #go_back {
+    margin-left: -200%;
+  }
+
+  .table {
+     display: block !important;
+  }
+
+  .table-responsive {
+    border: none;
+  }
+
+  .fixture_sep {
+    width: 50%;
+    margin-left: -10%;
+  }
+
+  #team_name {
+    margin-left: -420%;
+    padding-top: 100%;
+  }
+
+  #player_column {
+    margin-left: -5%;
+  }
+
+}
