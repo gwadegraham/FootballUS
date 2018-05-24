@@ -498,3 +498,48 @@ button {
     margin-left: -5%;
   }
 }
+
+/*Use a media query to add a break point at 250px: */
+@media screen and (max-width:250px) {
+  #main_container {
+    margin-top: -5%;
+    margin-left: 15%;
+  }
+
+  .team_crest {
+    width: 100%;
+    padding: 2% 0;
+    margin-left: 10%;
+    margin-top: -70%;
+  }
+
+  .col-lg-5 {
+    margin-left: 50%;
+  }
+
+  #go_back {
+    margin-left: -200%;
+  }
+
+  .table {
+     display: block !important;
+  }
+
+  .table-responsive {
+    border: none;
+  }
+
+  .fixture_sep {
+    width: 50%;
+    margin-left: -10%;
+  }
+
+  #team_name {
+    padding-left: 370%;
+    padding-top: 100%;
+  }
+
+  #player_column {
+    margin-left: -5%;
+  }
+}
