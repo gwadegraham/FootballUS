@@ -356,3 +356,145 @@ button {
     margin-top: -5%;
     margin-left: -3%;
 }
+
+
+
+/* Use a media query to add a break point at 1200px: */
+@media screen and (max-width:1200px) {
+  #main_container {
+    margin-top: -5%;
+    margin-left: 10%;
+  }
+}
+
+/* Use a media query to add a break point at 990px: 
+@media screen and (max-width:991px) {
+  #main_container {
+    margin-top: -5%;
+    margin-left: 10%;
+  }
+
+  .team_crest {
+    width: 25%;
+    padding: 2% 0;
+  }
+
+  .col-lg-5 {
+    margin-left: 30%;
+  }
+}*/
+
+ /*Use a media query to add a break point at 765px: */
+@media screen and (max-width:765px) {
+  #main_container {
+    margin-top: -5%;
+    margin-left: 10%;
+  }
+
+  .team_crest {
+    width: 25%;
+    padding: 2% 0;
+  }
+
+  #go_back {
+    margin-left: 38%;
+  }
+
+  #table_resp {
+    border: none;
+    width: 160%;
+  }
+
+  #player_column {
+    margin-left: 15%;
+  }
+
+} 
+
+/*Use a media query to add a break point at 500px: */
+@media screen and (max-width:500px) {
+  #main_container {
+    margin-top: -5%;
+    margin-left: 15%;
+  }
+
+  .team_crest {
+    width: 25%;
+    padding: 2% 0;
+    margin-left: 10%;
+  }
+
+  .col-lg-5 {
+    margin-left: 50%;
+  }
+
+  #go_back {
+    margin-left: -200%;
+  }
+
+  .table {
+     display: block !important;
+  }
+
+  .table-responsive {
+    border: none;
+  }
+
+  .fixture_sep {
+    width: 50%;
+    margin-left: -10%;
+  }
+
+  #team_div {
+    padding-left: 15%;
+  }
+
+  #player_column {
+    margin-left: -5%;
+  }
+}
+
+/*Use a media query to add a break point at 320px: */
+@media screen and (max-width:320px) {
+  #main_container {
+    margin-top: -5%;
+    margin-left: 15%;
+  }
+
+  .team_crest {
+    width: 100%;
+    padding: 2% 0;
+    margin-left: 10%;
+    margin-top: -70%;
+  }
+
+  .col-lg-5 {
+    margin-left: 50%;
+  }
+
+  #go_back {
+    margin-left: -200%;
+  }
+
+  .table {
+     display: block !important;
+  }
+
+  .table-responsive {
+    border: none;
+  }
+
+  .fixture_sep {
+    width: 50%;
+    margin-left: -10%;
+  }
+
+  #team_name {
+    padding-left: 50%;
+    padding-top: 100%;
+  }
+
+  #player_column {
+    margin-left: -5%;
+  }
+}
