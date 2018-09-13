@@ -61,14 +61,6 @@ def get_team_data(team_url, fixture_url, player_url, request):
 	play_pos_2 = []
 	for i in range(num_div, num_players):
 	    play_pos_2.append(playerdata['squad'][i]['position'])
-	# player number list 1
-	play_num_1 = []
-	for i in range(0,num_div):
-	    play_num_1.append("11")
-	# player number list 2
-	play_num_2 = []
-	for i in range(num_div, num_players):
-	    play_num_2.append("11")
 	# player nationality list 1
 	play_nat_1 = []
 	for i in range(0,num_div):
@@ -83,12 +75,12 @@ def get_team_data(team_url, fixture_url, player_url, request):
 		fixtureInfo.append([D, H, A, HG, AG])
 
 	playerInfo1 = []
-	for N, P, NU, NA in zip(play_names_1, play_pos_1, play_num_1, play_nat_1):
-		playerInfo1.append([N, P, NU, NA])
+	for N, P, NA in zip(play_names_1, play_pos_1, play_nat_1):
+		playerInfo1.append([N, P, NA])
 
 	playerInfo2 = []
-	for N, P, NU, NA in zip(play_names_2, play_pos_2, play_num_2, play_nat_2):
-		playerInfo2.append([N, P, NU, NA])
+	for N, P, NA in zip(play_names_2, play_pos_2, play_nat_2):
+		playerInfo2.append([N, P, NA])
 
 	return render(request, 'teamprofiles/base_team_profile.html', {
 		'teamName' : teamdata['name'],
@@ -123,7 +115,7 @@ def schalke(request):
 def hoffenheim(request):
 	team_url = 'http://api.football-data.org/v2/teams/2'
 	fixture_url = team_url + '/matches?status=FINISHED'
-	player_url = team_url 
+	player_url = team_url
 	return get_team_data(team_url, fixture_url, player_url, request)
 
 def bayer_leverkusen(request):
