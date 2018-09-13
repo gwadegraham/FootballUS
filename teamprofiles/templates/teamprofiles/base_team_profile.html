@@ -1,6 +1,9 @@
 {% extends "base_generic.html" %}
 <!DOCTYPE html>
 <html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 <!-- {% block content %} -->
 <body>
   <div id="wrapper">
@@ -16,28 +19,28 @@
             <div class="container" id="main_container">
                 <!-- crest and heading -->
                 <div class="row">
-                    <div class="col-lg-4 col-lg-offset-2">
+                    <div class="col-xs-4 col-xs-offset-2">
                       <img src='{{ teamCrest }}' class="team_crest">
-                    </div>
-                    <div class="col-lg-5">
+                    </div>  
+                    <div class="col-xs-4 col-xs-offset-2" id="team_div">
                         <h1 id="team_name">{{ teamName }}</h1>
                         <br>
                         <br>
                     </div>
-                    <div>
-                      <button class="fas fa-angle-double-left fa-4x" onclick="goBack()"></button>
+                    <!-- <div class="col-sm-2">
+                      <button class="fas fa-angle-double-left fa-4x" onclick="goBack()" id="go_back"></button>
                       <script>
                         function goBack() {
                             window.history.back();
                         }
                       </script>
-                    </div>
+                    </div> -->
                 </div>
                 <!-- further team info -->
                 <div class="row">
-                  <div class="col-lg-4 col-lg-offset-2">
+                  <div class="col-sm-4 col-sm-offset-2">
                     <h3>Fixtures:</h3>
-                    <div class="table-responsive">
+                    <div class="table-responsive" id="table_resp">
                       {% for entry in fixtureInfo %}
                         <table
                         class="table">
@@ -74,34 +77,38 @@
                       {% endfor %}
                     </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-sm-6" id="player_column">
                     <h3>Players:</h3>
-                    <div class="container">
-                      <!-- player column 1 -->
-                      <div class="col-lg-3">
-                        {% for entry in playerInfo1 %}
-                        <div class="card" style="width: 25rem;">
-                          <div class="card-body">
-                            <h5 class="card-title">{{ entry.0 }}</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">{{ entry.1 }}</h6>
-                            <p class="card-text">Nationality: {{ entry.2 }}</p>
+                      <div class="row">
+                      <div class="container" id="player_container">
+                        <!-- player column 1 -->
+                        <div class="col-sm-10 col-sm-offset-2 col-lg-3">
+                          {% for entry in playerInfo1 %}
+                          <div class="card" style="width: 25rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">{{ entry.0 }}</h5>
+                              <h6 class="card-subtitle mb-2 text-muted">{{ entry.1 }}</h6>
+                              <p class="card-text">Number: {{ entry.2 }}</p>
+                              <p class="card-text">Nationality: {{ entry.3 }}</p>
+                            </div>
                           </div>
+                          {% endfor %}
                         </div>
-                        {% endfor %}
-                      </div>
-                      <!-- player column 2 -->
-                      <div class="col-lg-3">
-                        {% for entry in playerInfo2 %}
-                        <div class="card" style="width: 25rem;">
-                          <div class="card-body">
-                            <h5 class="card-title">{{ entry.0 }}</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">{{ entry.1 }}</h6>
-                            <p class="card-text">Nationality: {{ entry.2 }}</p>
+                        <!-- player column 2 -->
+                        <div class="col-sm-10 col-sm-offset-2 col-lg-3" id="players_right">
+                          {% for entry in playerInfo2 %}
+                          <div class="card" style="width: 25rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">{{ entry.0 }}</h5>
+                              <h6 class="card-subtitle mb-2 text-muted">{{ entry.1 }}</h6>
+                              <p class="card-text">Number: {{ entry.2 }}</p>
+                              <p class="card-text">Nationality: {{ entry.3 }}</p>
+                            </div>
                           </div>
+                          {% endfor %}
                         </div>
-                        {% endfor %}
                       </div>
-                    </div>
+                      </div>
                   </div>
                 </div>
             </div>
