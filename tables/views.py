@@ -66,17 +66,17 @@ def bundesliga_1(request):
     return get_data(league_url, 18, request)
 
 def premier_league(request):
-    league_url = 'http://api.football-data.org/v1/competitions/445/leagueTable'
+    league_url = 'http://api.football-data.org/v2/competitions/2021/standings'
     return get_data(league_url, 20, request)
 
 def ligue_one(request):
-    league_url = 'http://api.football-data.org/v1/competitions/450/leagueTable'
+    league_url = 'http://api.football-data.org/v2/competitions/2015/standings'
     return get_data(league_url, 20, request)
 
 def serie_a(request):
-    league_url = 'http://api.football-data.org/v1/competitions/456/leagueTable'
+    league_url = 'http://api.football-data.org/v2/competitions/2019/standings'
     return get_data(league_url, 20, request)
 
 def laliga(request):
-    league_url = 'http://api.football-data.org/v1/competitions/455/leagueTable'
+    league_url = 'http://api.football-data.org/v2/competitions/2014/standings'
     return get_data(league_url, 20, request)
