@@ -3,6 +3,37 @@ from django.shortcuts import render
 import requests
 from datetime import datetime
 
+# list of mobile User Agents
+mobile_uas = [
+	'w3c ','acs-','alav','alca','amoi','audi','avan','benq','bird','blac',
+	'blaz','brew','cell','cldc','cmd-','dang','doco','eric','hipt','inno',
+	'ipaq','java','jigs','kddi','keji','leno','lg-c','lg-d','lg-g','lge-',
+	'maui','maxo','midp','mits','mmef','mobi','mot-','moto','mwbp','nec-',
+	'newt','noki','oper','palm','pana','pant','phil','play','port','prox',
+	'qwap','sage','sams','sany','sch-','sec-','send','seri','sgh-','shar',
+	'sie-','siem','smal','smar','sony','sph-','symb','t-mo','teli','tim-',
+	'tosh','tsm-','upg1','upsi','vk-v','voda','wap-','wapa','wapi','wapp',
+	'wapr','webc','winw','winw','xda','xda-'
+	]
+
+mobile_ua_hints = [ 'SymbianOS', 'Opera Mini', 'iPhone' ]
+
+
+def mobileBrowser(request):
+    ''' Super simple device detection, returns True for mobile devices '''
+
+    mobile_browser = False
+    ua = request.META['HTTP_USER_AGENT'].lower()[0:4]
+
+    if (ua in mobile_uas):
+        mobile_browser = True
+    else:
+        for hint in mobile_ua_hints:
+            if request.META['HTTP_USER_AGENT'].find(hint) > 0:
+                mobile_browser = True
+
+    return mobile_browser
+
 # Create your views here.
 def get_team_data(team_url, fixture_url, player_url, request):
 	headers = {'X-Auth-Token' : 'f097556025964ad88a20c752b96acca9'}
@@ -81,6 +112,23 @@ def get_team_data(team_url, fixture_url, player_url, request):
 	playerInfo2 = []
 	for N, P, NA in zip(play_names_2, play_pos_2, play_nat_2):
 		playerInfo2.append([N, P, NA])
+
+	if mobileBrowser(request):
+            return render(request, 'teamprofiles/m_base_team_profile.html', {
+				'teamName' : teamdata['name'],
+				'teamCrest' : teamdata['crestUrl'],
+				'fixtureInfo' : fixtureInfo,
+				'playerInfo1' : playerInfo1,
+				'playerInfo2' : playerInfo2
+			})
+	else:
+            return render(request, 'teamprofiles/base_team_profile.html', {
+				'teamName' : teamdata['name'],
+				'teamCrest' : teamdata['crestUrl'],
+				'fixtureInfo' : fixtureInfo,
+				'playerInfo1' : playerInfo1,
+				'playerInfo2' : playerInfo2
+			})
 
 	return render(request, 'teamprofiles/base_team_profile.html', {
 		'teamName' : teamdata['name'],

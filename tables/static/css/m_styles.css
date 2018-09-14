@@ -382,6 +382,41 @@ button {
 
 }
 
+#main_container {
+  margin-left: 10%;
+  margin-top: -20%;
+  font-size: 1em;
+  word-wrap: break-word;
+  width: 90%;
+}
+
+#main_container h1{
+  font-size: 3em;
+}
+
+#main_container h3{
+  font-size: 1.5em;
+
+}
+
+.team_crest {
+  width: 130%;
+  margin-left: 40%;
+}
+
+#team_div {
+  margin-left: 60%;
+}
+
+#player_container {
+  margin-left: 0%;
+  margin-top: 0%;
+}
+
+#table_resp {
+  width: 82%;
+}
+
 /* Use a media query to add a break point at 1200px: */
 /* @media screen and (max-width:1200px) {
   #main_container {
