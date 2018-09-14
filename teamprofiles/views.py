@@ -79,27 +79,54 @@ def get_team_data(team_url, fixture_url, player_url, request):
 	# player names list 1
 	play_names_1 = []
 	for i in range(0,num_div):
-	    play_names_1.append(playerdata['squad'][i]['name'])
+		if playerdata['squad'][i]['role'] != "COACH":
+			play_names_1.append(playerdata['squad'][i]['name'])
+		else:
+			0+0
 	# player names list 2
 	play_names_2 = []
 	for i in range(num_div, num_players):
-	    play_names_2.append(playerdata['squad'][i]['name'])
+		if playerdata['squad'][i]['role'] != "COACH":
+			play_names_2.append(playerdata['squad'][i]['name'])
+		else:
+			0+0
 	# player position list 1
 	play_pos_1 = []
 	for i in range(0,num_div):
-	    play_pos_1.append(playerdata['squad'][i]['position'])
+		if playerdata['squad'][i]['role'] != "COACH":
+			play_pos_1.append(playerdata['squad'][i]['position'])
+		else:
+			0+0
 	# player position list 2
 	play_pos_2 = []
 	for i in range(num_div, num_players):
-	    play_pos_2.append(playerdata['squad'][i]['position'])
+		if playerdata['squad'][i]['role'] != "COACH":
+			play_pos_2.append(playerdata['squad'][i]['position'])
+		else:
+			0+0
 	# player nationality list 1
 	play_nat_1 = []
 	for i in range(0,num_div):
-	    play_nat_1.append(playerdata['squad'][i]['nationality'])
+		if playerdata['squad'][i]['role'] != "COACH":
+			play_nat_1.append(playerdata['squad'][i]['nationality'])
+		else:
+			0+0
 	# player nationality list 2
 	play_nat_2 = []
 	for i in range(num_div, num_players):
-	    play_nat_2.append(playerdata['squad'][i]['nationality'])
+		if playerdata['squad'][i]['role'] != "COACH":
+			play_nat_2.append(playerdata['squad'][i]['nationality'])
+		else:
+			0+0
+	# finding the coach
+	coach = []
+	for i in range(0, num_players):
+		if playerdata['squad'][i]['role'] == "COACH":
+			coach.append(playerdata['squad'][i]['name'])
+			coach.append("Coach")
+			coach.append(playerdata['squad'][i]['nationality'])
+		else:
+			0+0
 
 	fixtureInfo = []
 	for D, H, A, HG, AG in zip(match_dates, home_teams, away_teams, home_goals, away_goals):
@@ -119,7 +146,8 @@ def get_team_data(team_url, fixture_url, player_url, request):
 				'teamCrest' : teamdata['crestUrl'],
 				'fixtureInfo' : fixtureInfo,
 				'playerInfo1' : playerInfo1,
-				'playerInfo2' : playerInfo2
+				'playerInfo2' : playerInfo2,
+				'coachInfo' : coach
 			})
 	else:
             return render(request, 'teamprofiles/base_team_profile.html', {
@@ -127,7 +155,8 @@ def get_team_data(team_url, fixture_url, player_url, request):
 				'teamCrest' : teamdata['crestUrl'],
 				'fixtureInfo' : fixtureInfo,
 				'playerInfo1' : playerInfo1,
-				'playerInfo2' : playerInfo2
+				'playerInfo2' : playerInfo2,
+				'coachInfo' : coach
 			})
 
 	return render(request, 'teamprofiles/base_team_profile.html', {
@@ -135,7 +164,8 @@ def get_team_data(team_url, fixture_url, player_url, request):
 		'teamCrest' : teamdata['crestUrl'],
 		'fixtureInfo' : fixtureInfo,
 		'playerInfo1' : playerInfo1,
-		'playerInfo2' : playerInfo2
+		'playerInfo2' : playerInfo2,
+		'coachInfo' : coach
 	})
 
 # ------------------------------- #
