@@ -89,6 +89,19 @@ def get_data(url,numTeams, request):
     for N, P, M, W, D, L, GF, GA, GD, PI in zip(team_names, team_posits, team_mp, team_wins, team_draw, team_loss, team_gf, team_ga, team_gd, team_points):
         table.append([N, P, M, W, D, L, GF, GA, GD, PI])
 
+    if mobileBrowser(request):
+            return render(request, 'tables/m_league_table.html', {
+                'matchday' : leaguedata['season']['currentMatchday'],
+                'leagueCaption' : leaguedata['competition']['name'],
+                'table' : table
+            })
+    else:
+            return render(request, 'tables/league_table.html', {
+                'matchday' : leaguedata['season']['currentMatchday'],
+                'leagueCaption' : leaguedata['competition']['name'],
+                'table' : table
+            })
+
     return render(request, 'tables/league_table.html', {
         'matchday' : leaguedata['season']['currentMatchday'],
         'leagueCaption' : leaguedata['competition']['name'],
