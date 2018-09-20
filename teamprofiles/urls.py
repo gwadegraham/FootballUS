@@ -5,7 +5,7 @@ from . import views
 
 urlpatterns = [
 	# Bundesliga url patterns
-    url(r'^Borussia Dortmund$', views.borussia_dortmund, name="borussia_dortmund"),
+    url(r'^BV Borussia 09 Dortmund$', views.borussia_dortmund, name="borussia_dortmund"),
     url(r'^FC Bayern M[\w|\W]nchen$', views.bayern_munich, name="bayern_munich"),
     url(r'^FC Schalke 04$', views.schalke, name="schalke"),
     url(r'^TSG 1899 Hoffenheim$', views.hoffenheim, name="hoffenheim"),
@@ -38,7 +38,7 @@ urlpatterns = [
     url(r'^AFC Bournemouth$', views.afc_bournemouth, name="afc_bournemouth"),
     url(r'^West Ham United FC$', views.west_ham_united, name="west_ham_united"),
     url(r'^Watford FC$', views.watford, name="watford"),
-    url(r'^Brighton & Hove Albion$', views.brighton_hove_albion, name="brighton_hove_albion"),
+    url(r'^Brighton & Hove Albion FC$', views.brighton_hove_albion, name="brighton_hove_albion"),
     url(r'^Huddersfield Town$', views.huddersfield_town, name="huddersfield_town"),
     url(r'^Southampton FC$', views.southampton, name="southampton"),
     url(r'^Swansea City FC$', views.swansea_city, name="swansea_city"),

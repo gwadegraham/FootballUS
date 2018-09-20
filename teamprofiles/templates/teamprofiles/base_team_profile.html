@@ -21,20 +21,12 @@
                 <div class="row">
                     <div class="col-xs-4 col-xs-offset-2">
                       <img src='{{ teamCrest }}' class="team_crest">
-                    </div>  
+                    </div>
                     <div class="col-xs-4 col-xs-offset-2" id="team_div">
                         <h1 id="team_name">{{ teamName }}</h1>
                         <br>
                         <br>
                     </div>
-                    <!-- <div class="col-sm-2">
-                      <button class="fas fa-angle-double-left fa-4x" onclick="goBack()" id="go_back"></button>
-                      <script>
-                        function goBack() {
-                            window.history.back();
-                        }
-                      </script>
-                    </div> -->
                 </div>
                 <!-- further team info -->
                 <div class="row">
@@ -77,19 +69,26 @@
                       {% endfor %}
                     </div>
                   </div>
-                  <div class="col-sm-6" id="player_column">
-                    <h3>Players:</h3>
+                  <div class="col-sm-5 col-sm-offset-1" id="player_column">
+                    <h3>Squad:</h3>
                       <div class="row">
                       <div class="container" id="player_container">
+
                         <!-- player column 1 -->
                         <div class="col-sm-10 col-sm-offset-2 col-lg-3">
+                          <div class="card" style="width: 25rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">{{ coachInfo.0 }}</h5>
+                              <h6 class="card-subtitle mb-2 text-muted">{{ coachInfo.1 }}</h6>
+                              <p class="card-text">Nationality: {{ coachInfo.2 }}</p>
+                            </div>
+                          </div>
                           {% for entry in playerInfo1 %}
                           <div class="card" style="width: 25rem;">
                             <div class="card-body">
                               <h5 class="card-title">{{ entry.0 }}</h5>
                               <h6 class="card-subtitle mb-2 text-muted">{{ entry.1 }}</h6>
-                              <p class="card-text">Number: {{ entry.2 }}</p>
-                              <p class="card-text">Nationality: {{ entry.3 }}</p>
+                              <p class="card-text">Nationality: {{ entry.2 }}</p>
                             </div>
                           </div>
                           {% endfor %}
@@ -101,8 +100,7 @@
                             <div class="card-body">
                               <h5 class="card-title">{{ entry.0 }}</h5>
                               <h6 class="card-subtitle mb-2 text-muted">{{ entry.1 }}</h6>
-                              <p class="card-text">Number: {{ entry.2 }}</p>
-                              <p class="card-text">Nationality: {{ entry.3 }}</p>
+                              <p class="card-text">Nationality: {{ entry.2 }}</p>
                             </div>
                           </div>
                           {% endfor %}
